@@ -18,17 +18,17 @@ This preview covers the core character pipeline for five characters: one-click r
 
 ## 免责声明 / Disclaimer
 
-**所有内容仅供学习使用。禁止公开 R18。**
+**所有内容仅供学习使用。禁止公开发布使用本渲染器制作的 R18 视频。**
 
-**All content is for study only. Public R18 is prohibited.**
+**All content is for study only. Do not publicly publish R18 videos produced with this renderer.**
 
-- **禁止公开 R18。** 不得将本预览、Talos Shader 或其产出用于公开的 R18 展示、传播、广告或商业宣传。
-- 本项目不提供、不附带、不传播任何受版权保护的第三方内容。请仅使用你依法享有授权的素材。
+- 本项目**不提供游戏资产**，亦不提供、不附带、不传播任何受版权保护的第三方内容。请仅使用你依法享有授权的素材。
+- **禁止公开发布使用 Talos Shader 制作的 R18 视频。**
 - **本预览仅开放部分已相对稳定的功能，不代表正式版品质。**
 - 你须对自身素材、产出与发布行为承担全部责任。使用、发布或分发即视为同意本声明。
 
-- **Public R18 is prohibited.** Do not use this preview, Talos Shader, or its outputs for public R18 display, distribution, advertising, or commercial promotion.
-- We do not provide, bundle, or distribute copyrighted third-party content. Use only materials you are legally authorized to use.
+- This project **does not provide game assets**, and does not provide, bundle, or distribute copyrighted third-party content. Use only materials you are legally authorized to use.
+- **Do not publicly publish R18 videos produced with Talos Shader.**
 - **This preview only includes some relatively stable features and does not represent full-release quality.**
 - You are solely responsible for your assets, outputs, and publications. By using, publishing, or distributing these materials, you agree to this disclaimer.
 
@@ -36,29 +36,13 @@ This preview covers the core character pipeline for five characters: one-click r
 
 ## 下载 / Downloads
 
-预览版分为两个包，**都需要安装**。 Both packages are required.
-
-| 包 / Package | 内容 / Contents | 获取 / Get |
-|---|---|---|
-| 插件与模组包 / Plugin & mod pack | 着色器 zipmod、展示舞台 zipmod、Studio 插件 | [GitHub Releases](https://github.com/nekochan1122/TalosShader-TechPreview/releases/latest) |
-| 材质包 / Texture pack | 五个角色的贴图与公共贴图 | 下方 Base64，解码一次 |
-
 当前版本 / Current version: **v0.1.0**（2026-10-01）
 
-- 插件与模组包：[`Talos_Shader_TechPreview_v0.1.0.zip`](https://github.com/nekochan1122/TalosShader-TechPreview/releases/latest)
-- 材质包链接（Base64，解码一次 / decode once）：
+插件与模组包 / Plugin & mod pack：[Talos_Shader_TechPreview_v0.1.0.zip](https://github.com/nekochan1122/TalosShader-TechPreview/releases/latest)
 
-```
+`
 aHR0cHM6Ly9nb2ZpbGUuaW8vZC9sZjZlQjF0Tg==
-```
-
-PowerShell：
-
-```powershell
-[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String("aHR0cHM6Ly9nb2ZpbGUuaW8vZC9sZjZlQjF0Tg=="))
-```
-
-以后若只更新插件或着色器，通常只需更换插件与模组包。材质包仅在贴图变更时更新。
+`
 
 ---
 
@@ -72,10 +56,13 @@ PowerShell：
 ## 安装 / Install
 
 1. 关闭 KKS。运行中无法替换 zipmod。
-2. 将两个压缩包中的 `mods` 与 `BepInEx` 解压到游戏根目录，允许合并文件夹。
-3. 更新时先删除 `mods/MyMods` 里的旧版 `[Talos] ... CharacterNPR ...zipmod`。同时只能保留一份；移到 `mods` 的子目录不算删除。
+2. 将压缩包中的 mods 与 BepInEx 解压到游戏根目录，允许合并文件夹。
+3. 更新时先删除 mods/MyMods 里的旧版 [Talos] ... CharacterNPR ...zipmod。同时只能保留一份；移到 mods 的子目录不算删除。
 
-Close KKS first. Extract the `mods` and `BepInEx` folders from both archives into the game root, merging folders. When updating, remove the previous CharacterNPR zipmod from `mods/MyMods`. Sideloader scans subfolders recursively.
+Close KKS first. Extract the mods and BepInEx folders into the game root, merging folders. When updating, remove the previous CharacterNPR zipmod from mods/MyMods. Sideloader scans subfolders recursively.
+
+本预览不提供游戏资产。请仅使用你依法享有授权的素材。
+This preview does not provide game assets. Use only materials you are legally authorized to use.
 
 ---
 
@@ -86,11 +73,10 @@ Close KKS first. Extract the `mods` and `BepInEx` folders from both archives int
 Press **Ctrl+Shift+E** in Studio. The window title reads Tech Preview.
 
 1. 在窗口顶部选择角色。选中场景中的角色时会按名称尝试识别。
-2. Setup 页确认材质包已安装。若提示贴图未安装，请解压材质包。
-3. 在 Workspace 中选中角色，点击 **Restore selected character**。
+2. 在 Workspace 中选中角色，点击 **Restore selected character**。
    - **KKS 角色卡**：按 UV 识别上述五个角色的服装部件，写入着色器与材质参数，并经 MaterialEditor 保存。
-   - **FBX**（AssetImport，Alt+I）：额外绑定贴图。本预览**不附带模型**。
-4. Lighting / Stage / Image 页可调整光照、展示舞台与调色。细节见窗口 Log 页。
+   - **FBX**（AssetImport，Alt+I）：额外绑定贴图。本预览**不附带模型或游戏资产**。
+3. Lighting / Stage / Image 页可调整光照、展示舞台与调色。细节见窗口 Log 页。
 
 一键可重复执行，结果不会叠加。
 
