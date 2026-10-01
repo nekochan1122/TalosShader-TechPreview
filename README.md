@@ -59,7 +59,6 @@ aHR0cHM6Ly9nb2ZpbGUuaW8vZC9sZjZlQjF0Tg==
 
 1. 关闭 KKS。运行中无法替换 zipmod。
 2. 将插件与模组包、材质包中的 mods 与 BepInEx 解压到游戏根目录，允许合并文件夹。
-3. 更新时先删除 mods/MyMods 里的旧版 [Talos] ... CharacterNPR ...zipmod。同时只能保留一份；移到 mods 的子目录不算删除。以后若只更新插件或着色器，通常只需更换插件与模组包。
 
 Close KKS first. Extract the mods and BepInEx folders from **both** archives into the game root, merging folders. When updating, remove the previous CharacterNPR zipmod from mods/MyMods. Sideloader scans subfolders recursively.
 
