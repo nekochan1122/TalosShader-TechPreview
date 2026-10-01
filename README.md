@@ -55,11 +55,13 @@ aHR0cHM6Ly9nb2ZpbGUuaW8vZC9sZjZlQjF0Tg==
 
 ## 安装 / Install
 
-1. 关闭 KKS。运行中无法替换 zipmod。
-2. 将压缩包中的 mods 与 BepInEx 解压到游戏根目录，允许合并文件夹。
-3. 更新时先删除 mods/MyMods 里的旧版 [Talos] ... CharacterNPR ...zipmod。同时只能保留一份；移到 mods 的子目录不算删除。
+插件与模组包、材质包**都需要安装**。 Both the plugin/mod pack and the texture pack are required.
 
-Close KKS first. Extract the mods and BepInEx folders into the game root, merging folders. When updating, remove the previous CharacterNPR zipmod from mods/MyMods. Sideloader scans subfolders recursively.
+1. 关闭 KKS。运行中无法替换 zipmod。
+2. 将插件与模组包、材质包中的 mods 与 BepInEx 解压到游戏根目录，允许合并文件夹。
+3. 更新时先删除 mods/MyMods 里的旧版 [Talos] ... CharacterNPR ...zipmod。同时只能保留一份；移到 mods 的子目录不算删除。以后若只更新插件或着色器，通常只需更换插件与模组包。
+
+Close KKS first. Extract the mods and BepInEx folders from **both** archives into the game root, merging folders. When updating, remove the previous CharacterNPR zipmod from mods/MyMods. Sideloader scans subfolders recursively.
 
 本预览不提供游戏资产。请仅使用你依法享有授权的素材。
 This preview does not provide game assets. Use only materials you are legally authorized to use.
@@ -73,10 +75,11 @@ This preview does not provide game assets. Use only materials you are legally au
 Press **Ctrl+Shift+E** in Studio. The window title reads Tech Preview.
 
 1. 在窗口顶部选择角色。选中场景中的角色时会按名称尝试识别。
-2. 在 Workspace 中选中角色，点击 **Restore selected character**。
+2. Setup 页确认**材质包已安装**。若提示贴图未安装，请先安装材质包后再继续。
+3. 在 Workspace 中选中角色，点击 **Restore selected character**。
    - **KKS 角色卡**：按 UV 识别上述五个角色的服装部件，写入着色器与材质参数，并经 MaterialEditor 保存。
    - **FBX**（AssetImport，Alt+I）：额外绑定贴图。本预览**不附带模型或游戏资产**。
-3. Lighting / Stage / Image 页可调整光照、展示舞台与调色。细节见窗口 Log 页。
+4. Lighting / Stage / Image 页可调整光照、展示舞台与调色。细节见窗口 Log 页。
 
 一键可重复执行，结果不会叠加。
 
