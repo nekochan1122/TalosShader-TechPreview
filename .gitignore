@@ -1,0 +1,4 @@
+# Ignore local binaries; releases are uploaded via GitHub Releases.
+*.zip
+.DS_Store
+Thumbs.db
