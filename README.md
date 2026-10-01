@@ -2,9 +2,13 @@
 
 通用渲染器 **Talos Shader** 的技术预览版，面向 Koikatsu Sunshine CharaStudio。
 
-This is a **technical preview** of **Talos Shader**, a general-purpose renderer for Koikatsu Sunshine CharaStudio. Features, properties, UI and file names may still change before a full release.
+This is a **technical preview** of **Talos Shader**, a general-purpose renderer for Koikatsu Sunshine CharaStudio.
 
-当前预览仅包含五个角色的核心角色渲染流程：一键还原、光照预设、自阴影、展示舞台与调色。不含毛发壳、场景着色器及其他完整版功能。
+**本预览仅开放部分已相对稳定的功能，其完成度、效果与稳定性均不代表正式版品质。** 功能、属性、界面与文件名在正式发布前仍可能调整。
+
+**This preview only includes a subset of relatively stable features. It does not represent the quality, completeness, or stability of the full release.** Features, properties, UI and file names may still change.
+
+当前预览包含五个角色的核心角色渲染流程：一键还原、光照预设、自阴影、展示舞台与调色。不含毛发壳、场景着色器及其他完整版功能。
 
 This preview covers the core character pipeline for five characters: one-click restore, lighting presets, self-shadow, overview stage, and colour grading. Hair shells, the scene renderer, and other full-release features are not included.
 
@@ -12,21 +16,43 @@ This preview covers the core character pipeline for five characters: one-click r
 
 ---
 
+## 免责声明 / Disclaimer
+
+**所有内容仅供学习与技术研究使用。禁止公开 R18。**
+
+All materials are provided **for study and technical research only. Public R18 use is prohibited.**
+
+- 不得将本预览、Talos Shader 或其产出用于公开的 R18 展示、传播、广告或商业宣传。
+- 请仅使用你依法享有授权的素材。本项目为非官方爱好者作品。
+- 你须对自身素材、产出与发布行为承担全部责任。
+
+Do not use this preview, Talos Shader, or its outputs for public R18 display, distribution, advertising, or commercial promotion. Use only materials you are legally authorized to use. You are solely responsible for your assets, outputs, and publications.
+
+---
+
 ## 下载 / Downloads
 
-预览版分为两个包，**都需要安装**。
-
-Both packages are required.
+预览版分为两个包，**都需要安装**。 Both packages are required.
 
 | 包 / Package | 内容 / Contents | 获取 / Get |
 |---|---|---|
 | 插件与模组包 / Plugin & mod pack | 着色器 zipmod、展示舞台 zipmod、Studio 插件 | [GitHub Releases](https://github.com/nekochan1122/TalosShader-TechPreview/releases/latest) |
-| 材质包 / Texture pack | 五个角色的贴图与公共贴图 | [gofile](https://gofile.io/d/lf6eB1tN) |
+| 材质包 / Texture pack | 五个角色的贴图与公共贴图 | 下方 Base64，解码一次 |
 
 当前版本 / Current version: **v0.1.0**（2026-10-01）
 
 - 插件与模组包：[`Talos_Shader_TechPreview_v0.1.0.zip`](https://github.com/nekochan1122/TalosShader-TechPreview/releases/latest)
-- 材质包：<https://gofile.io/d/lf6eB1tN>
+- 材质包链接（Base64，解码一次 / decode once）：
+
+```
+aHR0cHM6Ly9nb2ZpbGUuaW8vZC9sZjZlQjF0Tg==
+```
+
+PowerShell：
+
+```powershell
+[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String("aHR0cHM6Ly9nb2ZpbGUuaW8vZC9sZjZlQjF0Tg=="))
+```
 
 以后若只更新插件或着色器，通常只需更换插件与模组包。材质包仅在贴图变更时更新。
 
@@ -68,16 +94,6 @@ Press **Ctrl+Shift+E** in Studio. The window title reads Tech Preview.
 
 ## 预览范围 / Preview scope
 
-本预览暂不包含：其他角色、毛发壳、场景着色器、地面阴影与反射、NPR 点光/聚光、后处理，以及完整版中的部分手动工具。
+本预览暂不包含：其他角色、毛发壳、场景着色器、地面阴影与反射、NPR 点光/聚光、后处理，以及完整版中的部分手动工具。预览效果不代表正式版品质。
 
-Not included: other characters, hair shells, scene shaders, floor shadows/reflections, NPR point/spot lights, post-processing, and some full-release manual tools.
-
-描边平滑法线与头部朝向不随场景存档，读档后由插件自动重建。
-
----
-
-## 说明 / Notes
-
-本项目为非官方爱好者作品。请仅使用你拥有合法授权的素材。公开的 R18 用途须自行遵守所在地法律与各平台条款。
-
-This is an unofficial fan project. Use only materials you are legally authorized to use. Public R18 use remains your responsibility under applicable law and platform terms.
+Not included: other characters, hair shells, scene shaders, floor shadows/reflections, NPR point/spot lights, post-processing, and some full-release manual tools. Preview quality is not representative of the full release.
