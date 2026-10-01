@@ -18,15 +18,19 @@ This preview covers the core character pipeline for five characters: one-click r
 
 ## 免责声明 / Disclaimer
 
-**所有内容仅供学习与技术研究使用。禁止公开 R18。**
+**所有内容仅供学习使用。禁止公开 R18。**
 
-All materials are provided **for study and technical research only. Public R18 use is prohibited.**
+**All content is for study only. Public R18 is prohibited.**
 
-- 不得将本预览、Talos Shader 或其产出用于公开的 R18 展示、传播、广告或商业宣传。
-- 请仅使用你依法享有授权的素材。本项目为非官方爱好者作品。
-- 你须对自身素材、产出与发布行为承担全部责任。
+- **禁止公开 R18。** 不得将本预览、Talos Shader 或其产出用于公开的 R18 展示、传播、广告或商业宣传。
+- 本项目不提供、不附带、不传播任何受版权保护的第三方内容。请仅使用你依法享有授权的素材。
+- **本预览仅开放部分已相对稳定的功能，不代表正式版品质。**
+- 你须对自身素材、产出与发布行为承担全部责任。使用、发布或分发即视为同意本声明。
 
-Do not use this preview, Talos Shader, or its outputs for public R18 display, distribution, advertising, or commercial promotion. Use only materials you are legally authorized to use. You are solely responsible for your assets, outputs, and publications.
+- **Public R18 is prohibited.** Do not use this preview, Talos Shader, or its outputs for public R18 display, distribution, advertising, or commercial promotion.
+- We do not provide, bundle, or distribute copyrighted third-party content. Use only materials you are legally authorized to use.
+- **This preview only includes some relatively stable features and does not represent full-release quality.**
+- You are solely responsible for your assets, outputs, and publications. By using, publishing, or distributing these materials, you agree to this disclaimer.
 
 ---
 
