@@ -48,9 +48,9 @@ aHR0cHM6Ly9nb2ZpbGUuaW8vZC9sZjZlQjF0Tg==
 
 ## 依赖 / Requirements
 
-本预览需要以下配套插件。BetterRepack 通常已包含前四项；导入 FBX 时另需 AssetImport。
+建议使用最新 BetterRepack 版 KKS。本预览需要以下配套插件；BetterRepack 通常已包含前四项。导入 FBX 时另需 AssetImport。
 
-This preview requires the following companion plugins. BetterRepack typically already includes the first four. AssetImport is additionally required to import FBX.
+Use the latest BetterRepack build of KKS. This preview requires the following companion plugins; BetterRepack typically already includes the first four. AssetImport is additionally required to import FBX.
 
 - **BepInEx 5**：[github.com/BepInEx/BepInEx](https://github.com/BepInEx/BepInEx)
 - **BepisPlugins**（Sideloader、ExtensibleSaveFormat）：[github.com/IllusionMods/BepisPlugins](https://github.com/IllusionMods/BepisPlugins)
