@@ -48,8 +48,15 @@ aHR0cHM6Ly9nb2ZpbGUuaW8vZC9sZjZlQjF0Tg==
 
 ## 依赖 / Requirements
 
-- Koikatsu Sunshine BetterRepack（含 BepInEx、KKAPI、Sideloader、MaterialEditor）
-- 导入 FBX 时需要 AssetImport
+本预览需要以下配套插件。BetterRepack 通常已包含前四项；导入 FBX 时另需 AssetImport。
+
+This preview requires the following companion plugins. BetterRepack typically already includes the first four. AssetImport is additionally required to import FBX.
+
+- **BepInEx 5**：[github.com/BepInEx/BepInEx](https://github.com/BepInEx/BepInEx)
+- **BepisPlugins**（Sideloader、ExtensibleSaveFormat）：[github.com/IllusionMods/BepisPlugins](https://github.com/IllusionMods/BepisPlugins)
+- **IllusionModdingAPI**（KKSAPI / KKAPI）：[github.com/IllusionMods/IllusionModdingAPI](https://github.com/IllusionMods/IllusionModdingAPI)
+- **MaterialEditor**（KK_Plugins）：[github.com/IllusionMods/KK_Plugins](https://github.com/IllusionMods/KK_Plugins)
+- **AssetImport**（导入 FBX，可选）：[github.com/Njaecha/AssetImport](https://github.com/Njaecha/AssetImport)
 
 ---
 
