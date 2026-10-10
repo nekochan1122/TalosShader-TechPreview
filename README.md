@@ -36,9 +36,12 @@ This preview covers the core character pipeline for eight characters: one-click 
 
 ## 下载 / Downloads
 
-当前版本 / Current version: **v0.1.1**（2026-10-07）
+当前版本 / Current version: **v0.1.2**（2026-10-11）
 
-插件与模组包 / Plugin & mod pack：[Talos_Shader_TechPreview_v0.1.1.zip](https://github.com/nekochan1122/TalosShader-TechPreview/releases/latest)
+插件与模组包 / Plugin & mod pack：[EndField_TechPreview_v0.1.2.zip](https://github.com/nekochan1122/TalosShader-TechPreview/releases/latest)
+
+贴图包沿用 v0.1.1，已安装的用户只需更新主包。
+The v0.1.1 texture pack remains compatible. Existing users only need to update the main pack.
 
 ```
 aHR0cHM6Ly9nb2ZpbGUuaW8vZC9pOEhLN1pQRg==
@@ -62,16 +65,16 @@ Use the latest BetterRepack build of KKS. This preview requires the following co
 
 ## 安装 / Install
 
-插件与模组包、材质包**都需要安装**。v0.1.1 新增了角色贴图，材质包也需要更新。
+首次安装需要插件与模组包、材质包**两个包**。从 v0.1.1 更新时只需更新主包，贴图包不变。
 
-Both the plugin/mod pack and the texture pack are required. v0.1.1 adds character textures, so the texture pack must be updated as well.
+Both packs are required for a first installation. When updating from v0.1.1, replace only the main pack; the texture pack is unchanged.
 
 1. 关闭 KKS。运行中无法替换 zipmod。
-2. 删除 `mods` 中旧的 `[Talos] EndField.Shader.CharacterNPR TechPreview v0.1.0.zipmod`。不要只移到 `mods` 的子文件夹，Sideloader 仍会读到它。
+2. 将 `mods` 中旧版本的 `[Talos] EndField.Shader.CharacterNPR TechPreview ...zipmod` 移到 `mods` 以外备份。不要只移到 `mods` 的子文件夹，Sideloader 仍会读到它。
 3. 两个压缩包打开后应直接是 `mods` 与 `BepInEx`。解压到游戏根目录，允许合并文件夹。
 4. 已还原过的角色卡，请再点一次 **Restore selected character**。
 
-Close KKS first. Remove the previous CharacterNPR zipmod from `mods`. Extract `mods` and `BepInEx` from both archives into the game root. Run **Restore selected character** again on cards that were already restored.
+Close KKS first. Back up the previous CharacterNPR zipmod outside `mods`. Extract the main pack into the game root, and install the v0.1.1 texture pack if it is not already installed. Run **Restore selected character** again on cards that were already restored.
 
 MaterialEditor 请使用 **5.0 或更高版本**。过旧版本可能导致角色卡读档后恢复失败。
 Use MaterialEditor **5.0 or later**. Older builds can fail to restore a character card on load.
@@ -97,6 +100,18 @@ Press **Ctrl+Shift+E** in Studio. The window title reads Tech Preview.
 一键可重复执行，结果不会叠加。
 
 ---
+
+## v0.1.2
+
+- 新增共用角色反射（Lighting 页默认开启），减少昏暗场景中金属部位发黑的问题。
+- 游戏网格保留原材质的描边方向设置，修复部分服装描边。
+- 修复部分头模眼白遮挡瞳孔的问题。
+- 贴图包沿用 v0.1.1，支持角色不变。
+
+- Adds shared character reflections, enabled by default in Lighting, to prevent dark scene probes from dimming metallic parts.
+- Preserves the original material's outline direction for matched game meshes.
+- Fixes iris occlusion by the eye-white material on some head mods.
+- Keeps the v0.1.1 texture pack and the same eight supported characters.
 
 ## v0.1.1
 
