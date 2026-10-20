@@ -40,8 +40,8 @@ This preview covers the core character pipeline for nine characters: one-click r
 
 插件与模组包 / Plugin & mod pack：[EndField_TechPreview_v0.1.6.zip](https://github.com/nekochan1122/TalosShader-TechPreview/releases/latest)
 
-**本次主包和材质包都需要更新到 v0.1.6。** 材质包暗码（Base64）：
-**Update both the main pack and the texture pack to v0.1.6.** Texture pack code (Base64):
+**本次主包和材质包都需要更新到 v0.1.6。**
+**Update both the main pack and the texture pack to v0.1.6.**
 
 ```
 aHR0cHM6Ly9nb2ZpbGUuaW8vZC95ZDNNTXdtdQ==
