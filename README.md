@@ -8,11 +8,11 @@ This is a **technical preview** of **Talos Shader**, a general-purpose renderer 
 
 **This preview only includes a subset of relatively stable features. It does not represent the quality, completeness, or stability of the full release.** Features, properties, UI and file names may still change.
 
-当前预览包含八个角色的核心角色渲染流程：一键还原、光照预设、自阴影、展示舞台与调色。不含毛发壳、场景着色器及其他完整版功能。
+当前预览包含九个角色的核心角色渲染流程：一键还原、光照预设、自阴影、展示舞台与调色。不含毛发壳、场景着色器及其他完整版功能。
 
-This preview covers the core character pipeline for eight characters: one-click restore, lighting presets, self-shadow, overview stage, and colour grading. Hair shells, the scene renderer, and other full-release features are not included.
+This preview covers the core character pipeline for nine characters: one-click restore, lighting presets, self-shadow, overview stage, and colour grading. Hair shells, the scene renderer, and other full-release features are not included.
 
-支持角色 / Supported characters: **罗茜 Rossi · 诀 Arcane · 杰尔佩塔 Gilberta · 提弗洛斯 Typhoea · 伊冯 Yvonne · 祀 Si · 梨诺 Liino · 莱万汀 Laevatain**
+支持角色 / Supported characters: **罗茜 Rossi · 诀 Arcane · 杰尔佩塔 Gilberta · 提弗洛斯 Typhoea · 伊冯 Yvonne · 祀 Si · 梨诺 Liino · 莱万汀 Laevatain · 庄方宜 Zhuang Fangyi**
 
 ---
 
@@ -36,15 +36,15 @@ This preview covers the core character pipeline for eight characters: one-click 
 
 ## 下载 / Downloads
 
-当前版本 / Current version: **v0.1.2**（2026-10-11）
+当前版本 / Current version: **v0.1.6**（2026-10-20）
 
-插件与模组包 / Plugin & mod pack：[EndField_TechPreview_v0.1.2.zip](https://github.com/nekochan1122/TalosShader-TechPreview/releases/latest)
+插件与模组包 / Plugin & mod pack：[EndField_TechPreview_v0.1.6.zip](https://github.com/nekochan1122/TalosShader-TechPreview/releases/latest)
 
-贴图包沿用 v0.1.1，已安装的用户只需更新主包。
-The v0.1.1 texture pack remains compatible. Existing users only need to update the main pack.
+**本次主包和材质包都需要更新到 v0.1.6。** 材质包暗码（Base64）：
+**Update both the main pack and the texture pack to v0.1.6.** Texture pack code (Base64):
 
 ```
-aHR0cHM6Ly9nb2ZpbGUuaW8vZC9pOEhLN1pQRg==
+aHR0cHM6Ly9nb2ZpbGUuaW8vZC95ZDNNTXdtdQ==
 ```
 
 ---
@@ -65,16 +65,16 @@ Use the latest BetterRepack build of KKS. This preview requires the following co
 
 ## 安装 / Install
 
-首次安装需要插件与模组包、材质包**两个包**。从 v0.1.1 更新时只需更新主包，贴图包不变。
+首次安装及本次更新都需要插件与模组包、材质包**两个 v0.1.6 包**。
 
-Both packs are required for a first installation. When updating from v0.1.1, replace only the main pack; the texture pack is unchanged.
+Both v0.1.6 packs are required for a first installation and for this update.
 
 1. 关闭 KKS。运行中无法替换 zipmod。
 2. 将 `mods` 中旧版本的 `[Talos] EndField.Shader.CharacterNPR TechPreview ...zipmod` 移到 `mods` 以外备份。不要只移到 `mods` 的子文件夹，Sideloader 仍会读到它。
 3. 两个压缩包打开后应直接是 `mods` 与 `BepInEx`。解压到游戏根目录，允许合并文件夹。
 4. 已还原过的角色卡，请再点一次 **Restore selected character**。
 
-Close KKS first. Back up the previous CharacterNPR zipmod outside `mods`. Extract the main pack into the game root, and install the v0.1.1 texture pack if it is not already installed. Run **Restore selected character** again on cards that were already restored.
+Close KKS first. Back up the previous CharacterNPR zipmod outside `mods`. Extract both v0.1.6 packs into the game root. Run **Restore selected character** again on cards that were already restored.
 
 MaterialEditor 请使用 **5.0 或更高版本**。过旧版本可能导致角色卡读档后恢复失败。
 Use MaterialEditor **5.0 or later**. Older builds can fail to restore a character card on load.
@@ -93,13 +93,29 @@ Press **Ctrl+Shift+E** in Studio. The window title reads Tech Preview.
 1. 在窗口顶部选择角色。选中场景中的角色时会按名称尝试识别。
 2. Setup 页确认**材质包已安装**。若提示贴图未安装，请先安装材质包后再继续。
 3. 在 Workspace 中选中角色，点击 **Restore selected character**。
-   - **KKS 角色卡**：按 UV 识别上述八个角色的服装部件，写入着色器与材质参数，并经 MaterialEditor 保存。
+   - **KKS 角色卡**：按 UV 识别上述九个角色的服装部件，写入着色器与材质参数，并经 MaterialEditor 保存。
    - **FBX**（AssetImport，Alt+I）：额外绑定贴图。本预览**不附带模型或游戏资产**。
 4. Lighting / Stage / Image 页可调整光照、展示舞台与调色。细节见窗口 Log 页。
 
 一键可重复执行，结果不会叠加。
 
 ---
+
+## v0.1.6（含 v0.1.3–v0.1.5 更新 / Includes v0.1.3–v0.1.5）
+
+- 新增庄方宜：材质、光照预设、角色页灯光和相机，现支持九个角色。
+- 更新祀的模型数据、材质和角色页灯光；兼容祀与庄方宜旧版模型角色卡的贴图。
+- 改进服装识别，支持眼睛与眉毛透过刘海及半透明发丝层，并遵循 KKS 显示设置。
+- 修复重复一键后瞳孔消失、部分头模左右眼眼睑阴影偏移的问题。
+- 修复 MaterialEditor 向量属性的显示与编辑兼容性。
+- **主包和材质包均需更新到 v0.1.6。**
+
+- Adds Zhuang Fangyi with material data, lighting presets, page lights and camera; nine characters are supported.
+- Updates Si's model data, materials and page lights, with legacy texture support for Si and Zhuang Fangyi cards.
+- Improves outfit matching and supports eyes/brows through bangs with a translucent hair layer, following KKS display settings.
+- Fixes disappearing irises after repeated restore and asymmetric eyelid shadow alignment on some head mods.
+- Fixes MaterialEditor vector property display/editing compatibility.
+- **Update both packs to v0.1.6.**
 
 ## v0.1.2
 
