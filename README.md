@@ -36,12 +36,12 @@ This preview covers the core character pipeline for nine characters: one-click r
 
 ## 下载 / Downloads
 
-当前版本 / Current version: **v0.1.6**（2026-10-20）
+当前版本 / Current version: **v0.1.7**（2026-10-20）
 
-插件与模组包 / Plugin & mod pack：[EndField_TechPreview_v0.1.6.zip](https://github.com/nekochan1122/TalosShader-TechPreview/releases/latest)
+插件与模组包 / Plugin & mod pack：[EndField_TechPreview_v0.1.7.zip](https://github.com/nekochan1122/TalosShader-TechPreview/releases/latest)
 
-**本次主包和材质包都需要更新到 v0.1.6。**
-**Update both the main pack and the texture pack to v0.1.6.**
+**本次只更新主包。已安装 v0.1.6 材质包的用户无需重新下载材质包。**
+**Update only the main pack. Keep the v0.1.6 texture pack if already installed.**
 
 ```
 aHR0cHM6Ly9nb2ZpbGUuaW8vZC95ZDNNTXdtdQ==
@@ -65,16 +65,16 @@ Use the latest BetterRepack build of KKS. This preview requires the following co
 
 ## 安装 / Install
 
-首次安装及本次更新都需要插件与模组包、材质包**两个 v0.1.6 包**。
+首次安装需要 v0.1.7 主包和 v0.1.6 材质包。从 v0.1.6 更新只需换主包；从 v0.1.5 及更早版本更新，还需安装 v0.1.6 材质包。
 
-Both v0.1.6 packs are required for a first installation and for this update.
+A first installation requires the v0.1.7 main pack and v0.1.6 texture pack. Updating from v0.1.6 requires only the main pack. Users updating from v0.1.5 or earlier also need the v0.1.6 texture pack.
 
 1. 关闭 KKS。运行中无法替换 zipmod。
 2. 将 `mods` 中旧版本的 `[Talos] EndField.Shader.CharacterNPR TechPreview ...zipmod` 移到 `mods` 以外备份。不要只移到 `mods` 的子文件夹，Sideloader 仍会读到它。
-3. 两个压缩包打开后应直接是 `mods` 与 `BepInEx`。解压到游戏根目录，允许合并文件夹。
+3. 把主包解压到游戏根目录，允许合并文件夹；仅在尚未安装 v0.1.6 材质包时补装材质包。压缩包内容应直接合并到 `mods` 与 `BepInEx`。
 4. 已还原过的角色卡，请再点一次 **Restore selected character**。
 
-Close KKS first. Back up the previous CharacterNPR zipmod outside `mods`. Extract both v0.1.6 packs into the game root. Run **Restore selected character** again on cards that were already restored.
+Close KKS first. Back up the previous CharacterNPR zipmod outside `mods`. Extract the v0.1.7 main pack into the game root; install the v0.1.6 texture pack only if missing. Run **Restore selected character** again on cards that were already restored.
 
 MaterialEditor 请使用 **5.0 或更高版本**。过旧版本可能导致角色卡读档后恢复失败。
 Use MaterialEditor **5.0 or later**. Older builds can fail to restore a character card on load.
@@ -85,6 +85,10 @@ This preview does not provide game assets. Use only materials you are legally au
 ---
 
 ## 使用 / Usage
+
+**角色卡一键还原只支持 [pixiv 用户 26299334](https://www.pixiv.net/users/26299334) 的角色卡**，其他作者不保证服装识别、贴图和颜色正确。**预览版暂不包含正式版的脖子接缝修复**，使用头模时脸与脖子之间可能有接缝。
+
+**One-click card restore only supports cards by [pixiv user 26299334](https://www.pixiv.net/users/26299334).** Outfit matching, textures and colours are not guaranteed for other authors. **The preview does not include the full version's neck seam fix.**
 
 在 Studio 中按 **Ctrl+Shift+E** 打开窗口（标题为 Tech Preview）。
 
@@ -100,6 +104,22 @@ Press **Ctrl+Shift+E** in Studio. The window title reads Tech Preview.
 一键可重复执行，结果不会叠加。
 
 ---
+
+## v0.1.7
+
+- 身体肤色调色：一键还原最后一步把角色卡身体贴图调到对应角色的游戏肤色，脸和头模不变；Setup 页 Body skin tone 可切换前后效果或重新调色，随场景保存。
+- 地面阴影：Stage 页，默认开启，CharInfo 舞台地面接收角色主光阴影，可调柔和度。
+- 接触阴影：Lighting 页，默认关闭，补充刘海、眼皮等细小近距离阴影，可独立于自阴影使用。
+- 地面反射：Stage 页，默认关闭，仅作用于支持平面反射的材质，目前为提弗洛斯 cloth_07；游戏角色页没有此效果。
+- 主包更新到 v0.1.7，材质包沿用 v0.1.6。
+
+- Body skin tone: the final card restore step matches body texture colour to the character's game skin tone, leaving the face/head mod unchanged. Toggle or recalibrate in Setup; saved with the scene.
+- Floor shadows: enabled by default in Stage, with adjustable softness on the CharInfo stage.
+- Contact shadows: disabled by default in Lighting; adds fine bangs/eyelid shadows independently of self-shadow.
+- Floor reflections: disabled by default in Stage, only for compatible materials (currently Typhoea cloth_07); absent from the game's character page.
+- Update the main pack to v0.1.7; keep the v0.1.6 texture pack.
+
+完整累计公告 / Full cumulative changelog: [Release v0.1.7](https://github.com/nekochan1122/TalosShader-TechPreview/releases/tag/v0.1.7)
 
 ## v0.1.6（含 v0.1.3–v0.1.5 更新 / Includes v0.1.3–v0.1.5）
 
@@ -145,6 +165,6 @@ Press **Ctrl+Shift+E** in Studio. The window title reads Tech Preview.
 
 ## 预览范围 / Preview scope
 
-本预览暂不包含：其余角色、毛发壳、场景着色器、地面阴影与反射、NPR 点光/聚光、后处理，以及完整版中的部分手动工具。预览效果不代表正式版品质。
+本预览暂不包含：其余角色、毛发壳、场景着色器、脖子接缝修复、NPR 点光/聚光、后处理，以及完整版中的部分手动工具。预览效果不代表正式版品质。
 
-Not included: the remaining characters, hair shells, scene shaders, floor shadows/reflections, NPR point/spot lights, post-processing, and some full-release manual tools. Preview quality is not representative of the full release.
+Not included: the remaining characters, hair shells, scene shaders, neck seam repair, NPR point/spot lights, post-processing, and some full-release manual tools. Preview quality is not representative of the full release.
