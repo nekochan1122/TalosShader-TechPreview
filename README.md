@@ -36,9 +36,11 @@ This preview covers the core character pipeline for nine characters: one-click r
 
 ## 下载 / Downloads
 
-当前版本 / Current version: **v0.1.7**（2026-10-20）
+当前版本 / Current version: **v0.1.7fix**（2026-10-21）
 
-插件与模组包 / Plugin & mod pack：[EndField_TechPreview_v0.1.7.zip](https://github.com/nekochan1122/TalosShader-TechPreview/releases/latest)
+插件与模组包 / Plugin & mod pack：[EndField_TechPreview_v0.1.7fix.zip](https://github.com/nekochan1122/TalosShader-TechPreview/releases/latest)
+
+修复部分头模卡眉心附近的眉毛透过刘海的问题。已安装原 v0.1.7 的用户请重新下载主包并再次执行一键还原；材质包无需更新。
 
 **本次只更新主包。已安装 v0.1.6 材质包的用户无需重新下载材质包。**
 **Update only the main pack. Keep the v0.1.6 texture pack if already installed.**
